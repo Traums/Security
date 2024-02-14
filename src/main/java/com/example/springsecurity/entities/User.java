@@ -1,10 +1,9 @@
 package com.example.springsecurity.entities;
 
-import jakarta.persistence.*;
 import lombok.Data;
 
+import javax.persistence.*;
 import java.util.Collection;
-import java.util.Collections;
 
 @Entity
 @Data
@@ -13,7 +12,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "username")
     private String username;
